@@ -1,0 +1,17 @@
+#izgledDugme {
+   -fx-background-color: white;
+   -fx-border-color: lightgray;
+}
+
+#izgledPodloga {
+    -fx-background-color: ghostwhite;
+}
+
+#izgledJednako {
+    -fx-background-color: pink;
+    -fx-border-color: lightgray;
+}
+
+#izgledRezultat {
+    -fx-background-color: lightgreen;
+}

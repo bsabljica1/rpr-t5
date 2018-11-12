@@ -9,37 +9,37 @@ public class Controller {
     int operacija = 0;
 
     @FXML
-    private Button broj0;
+    private Button btn0;
 
     @FXML
-    private Button broj1;
+    private Button btn1;
 
     @FXML
-    private Button broj2;
+    private Button btn2;
 
     @FXML
-    private Button broj3;
+    private Button btn3;
 
     @FXML
-    private Button broj4;
+    private Button btn4;
 
     @FXML
-    private Button broj5;
+    private Button btn5;
 
     @FXML
-    private Button broj6;
+    private Button btn6;
 
     @FXML
-    private Button broj7;
+    private Button btn7;
 
     @FXML
-    private Button broj8;
+    private Button btn8;
 
     @FXML
-    private Button broj9;
+    private Button btn9;
 
     @FXML
-    private Button mod;
+    private Button modul;
 
     @FXML
     private Button kroz;
@@ -51,103 +51,103 @@ public class Controller {
     private Button minus;
 
     @FXML
-    private Button plus;
+    private Button plusBtn;
 
     @FXML
-    private Button jednako;
+    private Button equalsBtn;
 
     @FXML
     private Button tacka;
 
     @FXML
-    private Label rez = new Label("");
+    private Label display = new Label("");
 
     @FXML
     public void Brojevi(ActionEvent actionEvent) {
-        if(actionEvent.getSource()==broj1){
-            rez.setText(rez.getText()+"1");
+        if(actionEvent.getSource()==btn1){
+            display.setText(display.getText()+"1");
         }
-        else if(actionEvent.getSource()==broj0){
-            rez.setText(rez.getText()+"0");
+        else if(actionEvent.getSource()==btn0){
+            display.setText(display.getText()+"0");
         }
-        else if(actionEvent.getSource()==broj2){
-            rez.setText(rez.getText()+"2");
+        else if(actionEvent.getSource()==btn2){
+            display.setText(display.getText()+"2");
         }
-        else if(actionEvent.getSource()==broj3){
-            rez.setText(rez.getText()+"3");
+        else if(actionEvent.getSource()==btn3){
+            display.setText(display.getText()+"3");
         }
-        else if(actionEvent.getSource()==broj7){
-            rez.setText(rez.getText()+"7");
+        else if(actionEvent.getSource()==btn7){
+            display.setText(display.getText()+"7");
         }
-        else if(actionEvent.getSource()==broj4){
-            rez.setText(rez.getText()+"4");
+        else if(actionEvent.getSource()==btn4){
+            display.setText(display.getText()+"4");
         }
-        else if(actionEvent.getSource()==broj5){
-            rez.setText(rez.getText()+"5");
+        else if(actionEvent.getSource()==btn5){
+            display.setText(display.getText()+"5");
         }
-        else if(actionEvent.getSource()==broj6){
-            rez.setText(rez.getText()+"6");
+        else if(actionEvent.getSource()==btn6){
+            display.setText(display.getText()+"6");
         }
-        else if(actionEvent.getSource()==broj8){
-            rez.setText(rez.getText()+"8");
+        else if(actionEvent.getSource()==btn8){
+            display.setText(display.getText()+"8");
         }
-        else if(actionEvent.getSource()==broj9){
-            rez.setText(rez.getText()+"9");
+        else if(actionEvent.getSource()==btn9){
+            display.setText(display.getText()+"9");
         }
         else if(actionEvent.getSource()==tacka){
-            rez.setText(rez.getText()+".");
+            display.setText(display.getText()+".");
         }
     }
 
     @FXML
     public void Operacije(ActionEvent actionEvent) {
-        if(actionEvent.getSource()==plus){
-            broj = Float.parseFloat(rez.getText());
-            rez.setText("");
+        if(actionEvent.getSource()==plusBtn){
+            broj = Float.parseFloat(display.getText());
+            display.setText("");
             operacija = 1;
         }
         else if(actionEvent.getSource()==minus){
-            broj = Float.parseFloat(rez.getText());
-            rez.setText("");
+            broj = Float.parseFloat(display.getText());
+            display.setText("");
             operacija = 2;
         }
 
         else if(actionEvent.getSource()==kroz){
-            broj = Float.parseFloat(rez.getText());
-            rez.setText("");
+            broj = Float.parseFloat(display.getText());
+            display.setText("");
             operacija = 3;
         }
 
         else if(actionEvent.getSource()==puta){
-            broj = Float.parseFloat(rez.getText());
-            rez.setText("");
+            broj = Float.parseFloat(display.getText());
+            display.setText("");
             operacija = 4;
         }
 
-        else if(actionEvent.getSource()==mod){
-            broj = Float.parseFloat(rez.getText());
-            rez.setText("");
+        else if(actionEvent.getSource()==modul){
+            broj = Float.parseFloat(display.getText());
+            display.setText("");
             operacija = 5;
         }
 
-        else if(actionEvent.getSource()==jednako){
-            Float drugiBroj = Float.parseFloat(rez.getText());
-            rez.setText("");
+        else if(actionEvent.getSource()==equalsBtn){
+            Float drugiBroj = Float.parseFloat(display.getText());
+            display.setText("");
             switch (operacija){
                 case 1:
-                    rez.setText(String.valueOf(broj+drugiBroj));
+                    display.setText(String.valueOf(broj+drugiBroj));
                     break;
                 case 2:
-                    rez.setText(String.valueOf(broj-drugiBroj));
+                    display.setText(String.valueOf(broj-drugiBroj));
                     break;
                 case 3:
-                    rez.setText(String.valueOf(broj/drugiBroj));
+                    display.setText(String.valueOf(broj/drugiBroj));
                     break;
                 case 4:
-                    rez.setText(String.valueOf(broj*drugiBroj));
+                    display.setText(String.valueOf(broj*drugiBroj));
                     break;
                 case 5:
-                    rez.setText(String.valueOf(broj%drugiBroj));
+                    display.setText(String.valueOf(broj%drugiBroj));
                     break;
             }
 

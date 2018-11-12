@@ -7,7 +7,7 @@
 <?import java.net.URL?>
 
 
-<GridPane id="dPodloga" alignment="center" hgap="5" vgap="5" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+<GridPane id="izgledPodloga" alignment="center" hgap="5" vgap="5" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
     <columnConstraints>
         <ColumnConstraints hgrow="ALWAYS" />
         <ColumnConstraints hgrow="ALWAYS" />
@@ -22,45 +22,45 @@
         <RowConstraints vgrow="ALWAYS"/>
     </rowConstraints>
     <stylesheets>
-        <URL value="@dugme.css"/>
+        <URL value="@izgled.css"/>
     </stylesheets>
     <children>
 
-                <Button id="dugmeDugme" fx:id="mod" GridPane.rowIndex="1" text="\%" maxWidth="Infinity" onAction="#Operacije" />
+                <Button id="izgledDugme" fx:id="modul" GridPane.rowIndex="1" text="\%" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" />
 
-                <Button id="dugmeDugme" fx:id="broj1" maxWidth="Infinity" onAction="#Brojevi" text="1" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+                <Button id="izgledDugme" fx:id="btn1" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="1" GridPane.rowIndex="4" GridPane.columnIndex="0" />
 
-                <Button id="dugmeDugme" fx:id="broj2" maxWidth="Infinity" onAction="#Brojevi" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Button id="izgledDugme" fx:id="btn2" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
-                <Button id="dugmeDugme" fx:id="broj3" maxWidth="Infinity" onAction="#Brojevi" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <Button id="izgledDugme" fx:id="btn3" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
 
-                <Button id="dugmeDugme" fx:id="broj4" maxWidth="Infinity" onAction="#Brojevi" text="4" GridPane.rowIndex="3" />
+                <Button id="izgledDugme" fx:id="btn4" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="4" GridPane.rowIndex="3" />
 
-                <Button id="dugmeDugme" fx:id="broj5" maxWidth="Infinity" onAction="#Brojevi" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button id="izgledDugme" fx:id="btn5" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
-                <Button id="dugmeDugme" fx:id="broj6" maxWidth="Infinity" onAction="#Brojevi" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Button id="izgledDugme" fx:id="btn6" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
 
-                <Button id="dugmeDugme" fx:id="broj7" maxWidth="Infinity" onAction="#Brojevi" text="7" GridPane.rowIndex="2" />
+                <Button id="izgledDugme" fx:id="btn7" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="7" GridPane.rowIndex="2" />
 
-                <Button id="dugmeDugme" fx:id="broj8" maxWidth="Infinity" onAction="#Brojevi" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button id="izgledDugme" fx:id="btn8" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
-                <Button id="dugmeDugme" fx:id="broj9" maxWidth="Infinity" onAction="#Brojevi" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button id="izgledDugme" fx:id="btn9" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
 
-                <Button id="dugmeDugme" fx:id="kroz" maxWidth="Infinity" onAction="#Operacije" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button id="izgledDugme" fx:id="kroz" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
-                <Button id="dugmeDugme" fx:id="puta" maxWidth="Infinity" onAction="#Operacije" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button id="izgledDugme" fx:id="puta" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
 
-                <Button id="dugmeDugme" fx:id="minus" maxWidth="Infinity" onAction="#Operacije" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button id="izgledDugme" fx:id="minus" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
-                <Button id="dugmeDugme" fx:id="plus" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+                <Button id="izgledDugme" fx:id="plusBtn" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
 
-                <Button id="dugmeJednako" fx:id="jednako" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+                <Button id="izgledJednako" fx:id="equalsBtn" maxWidth="Infinity" maxHeight="Infinity" onAction="#Operacije" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
 
-                <Button id="dugmeDugme" fx:id="tacka" maxWidth="Infinity" onAction="#Brojevi" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Button id="izgledDugme" fx:id="tacka" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
 
-                <Button id="dugmeDugme" fx:id="broj0" maxWidth="Infinity" onAction="#Brojevi" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                <Button id="izgledDugme" fx:id="btn0" maxWidth="Infinity" maxHeight="Infinity" onAction="#Brojevi" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
 
-                <Label id="dugmeRezultat" fx:id="rez" maxWidth="Infinity" maxHeight="Infinity" GridPane.columnSpan="4" />
+                <Label id="izgledRezultat" fx:id="display" maxWidth="Infinity" maxHeight="Infinity" GridPane.columnSpan="4" />
 
             </children>
 </GridPane>
