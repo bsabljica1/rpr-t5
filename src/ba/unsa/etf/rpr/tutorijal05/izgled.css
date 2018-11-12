@@ -1,17 +1,10 @@
-#izgledDugme {
-   -fx-background-color: white;
-   -fx-border-color: lightgray;
-}
 
-#izgledPodloga {
-    -fx-background-color: ghostwhite;
-}
 
-#izgledJednako {
+#equalsBtn {
     -fx-background-color: pink;
     -fx-border-color: lightgray;
 }
 
-#izgledRezultat {
+#display {
     -fx-background-color: lightgreen;
 }

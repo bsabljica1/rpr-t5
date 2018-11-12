@@ -64,20 +64,17 @@ public class Controller {
 
     @FXML
     public void Brojevi(ActionEvent actionEvent) {
-        if(actionEvent.getSource()==btn1){
-            display.setText(display.getText()+"1");
-        }
-        else if(actionEvent.getSource()==btn0){
+        if(actionEvent.getSource()==btn0){
             display.setText(display.getText()+"0");
+        }
+        else if(actionEvent.getSource()==btn1){
+            display.setText(display.getText()+"1");
         }
         else if(actionEvent.getSource()==btn2){
             display.setText(display.getText()+"2");
         }
         else if(actionEvent.getSource()==btn3){
             display.setText(display.getText()+"3");
-        }
-        else if(actionEvent.getSource()==btn7){
-            display.setText(display.getText()+"7");
         }
         else if(actionEvent.getSource()==btn4){
             display.setText(display.getText()+"4");
@@ -87,6 +84,9 @@ public class Controller {
         }
         else if(actionEvent.getSource()==btn6){
             display.setText(display.getText()+"6");
+        }
+        else if(actionEvent.getSource()==btn7){
+            display.setText(display.getText()+"7");
         }
         else if(actionEvent.getSource()==btn8){
             display.setText(display.getText()+"8");
