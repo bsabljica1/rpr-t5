@@ -27,41 +27,41 @@
     </stylesheets>
     <children>
 
-                <Button fx:id="modul" maxHeight="Infinity" maxWidth="Infinity" onAction="#Operacije" text="\%" GridPane.rowIndex="1" />
+                <Button fx:id="modulBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#modulBtn" text="\%" GridPane.rowIndex="1" />
 
-                <Button fx:id="btn1" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="1" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <Button fx:id="btn1" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn1" text="1" GridPane.columnIndex="0" GridPane.rowIndex="4" />
 
-                <Button fx:id="btn2" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Button fx:id="btn2" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn2" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
-                <Button fx:id="btn3" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <Button fx:id="btn3" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn3" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
 
-                <Button fx:id="btn4" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="4" GridPane.rowIndex="3" />
+                <Button fx:id="btn4" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn4" text="4" GridPane.rowIndex="3" />
 
-                <Button fx:id="btn5" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button fx:id="btn5" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
-                <Button fx:id="btn6" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Button fx:id="btn6" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
 
-                <Button fx:id="btn7" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="7" GridPane.rowIndex="2" />
+                <Button fx:id="btn7" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn7" text="7" GridPane.rowIndex="2" />
 
-                <Button fx:id="btn8" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="btn8" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
-                <Button fx:id="btn9" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button fx:id="btn9" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
 
-                <Button fx:id="kroz" maxHeight="Infinity" maxWidth="Infinity" onAction="#Operacije" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="divideBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#divideBtn" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
-                <Button fx:id="puta" maxHeight="Infinity" maxWidth="Infinity" onAction="#Operacije" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button fx:id="multiplyBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#multiplyBtn" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
 
-                <Button fx:id="minus" maxHeight="Infinity" maxWidth="Infinity" onAction="#Operacije" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button fx:id="minusBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#minusBtn" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
-                <Button fx:id="plusBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#Operacije" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+                <Button fx:id="plusBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#plusBtn" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
 
-                <Button fx:id="equalsBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#Operacije" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+                <Button fx:id="equalsBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#equals" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
 
-                <Button fx:id="tacka" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Button fx:id="dotBtn" maxHeight="Infinity" maxWidth="Infinity" onAction="#dotBtn" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
 
-                <Button fx:id="btn0" maxHeight="Infinity" maxWidth="Infinity" onAction="#Brojevi" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                <Button fx:id="btn0" maxHeight="Infinity" maxWidth="Infinity" onAction="#btn0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
 
-                <Label fx:id="display" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnSpan="4" />
+                <Label fx:id="display" text="${controller.rezultat}"  maxHeight="Infinity" maxWidth="Infinity" GridPane.columnSpan="4" />
 
             </children>
 </GridPane>

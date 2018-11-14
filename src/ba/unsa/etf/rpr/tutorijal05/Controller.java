@@ -1,157 +1,139 @@
 package ba.unsa.etf.rpr.tutorijal05;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.control.Label;
 
 public class Controller {
-    Float broj = 0f;
-    int operacija = 0;
+    private SimpleStringProperty rezultat;
+    private String brojJedan="";
+    private String brojDva="";
+    private String operacija="";
 
-    @FXML
-    private Button btn0;
+    public Label display;
 
-    @FXML
-    private Button btn1;
+    public Controller() {
+        rezultat = new SimpleStringProperty();
+        rezultat.set("0");
+    }
 
-    @FXML
-    private Button btn2;
+    public String getRezultat() {
+        return rezultat.get();
+    }
 
-    @FXML
-    private Button btn3;
+    public SimpleStringProperty rezultatProperty() {
+        return rezultat;
+    }
 
-    @FXML
-    private Button btn4;
+    public void btn1(ActionEvent actionEvent) {
+        brojJedan+="1";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button btn5;
+    public void btn2(ActionEvent actionEvent) {
+        brojJedan+="2";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button btn6;
+    public void btn3(ActionEvent actionEvent) {
+        brojJedan+="3";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button btn7;
+    public void btn4(ActionEvent actionEvent) {
+        brojJedan+="4";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button btn8;
+    public void btn5(ActionEvent actionEvent) {
+        brojJedan+="5";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button btn9;
+    public void btn6(ActionEvent actionEvent) {
+        brojJedan+="6";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button modul;
+    public void btn7(ActionEvent actionEvent) {
+        brojJedan+="7";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button kroz;
+    public void btn8(ActionEvent actionEvent) {
+        brojJedan+="8";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button puta;
+    public void btn9(ActionEvent actionEvent) {
+        brojJedan+="9";
+        rezultat.set(brojJedan);
+    }
 
-    @FXML
-    private Button minus;
-
-    @FXML
-    private Button plusBtn;
-
-    @FXML
-    private Button equalsBtn;
-
-    @FXML
-    private Button tacka;
-
-    @FXML
-    private Label display = new Label("");
-
-    @FXML
-    public void Brojevi(ActionEvent actionEvent) {
-        if(actionEvent.getSource()==btn0){
-            display.setText(display.getText()+"0");
-        }
-        else if(actionEvent.getSource()==btn1){
-            display.setText(display.getText()+"1");
-        }
-        else if(actionEvent.getSource()==btn2){
-            display.setText(display.getText()+"2");
-        }
-        else if(actionEvent.getSource()==btn3){
-            display.setText(display.getText()+"3");
-        }
-        else if(actionEvent.getSource()==btn4){
-            display.setText(display.getText()+"4");
-        }
-        else if(actionEvent.getSource()==btn5){
-            display.setText(display.getText()+"5");
-        }
-        else if(actionEvent.getSource()==btn6){
-            display.setText(display.getText()+"6");
-        }
-        else if(actionEvent.getSource()==btn7){
-            display.setText(display.getText()+"7");
-        }
-        else if(actionEvent.getSource()==btn8){
-            display.setText(display.getText()+"8");
-        }
-        else if(actionEvent.getSource()==btn9){
-            display.setText(display.getText()+"9");
-        }
-        else if(actionEvent.getSource()==tacka){
-            display.setText(display.getText()+".");
+    public void btn0(ActionEvent actionEvent) {
+        if (!brojJedan.equals("")) {
+            brojJedan += "0";
+            rezultat.set(brojJedan);
         }
     }
 
-    @FXML
-    public void Operacije(ActionEvent actionEvent) {
-        if(actionEvent.getSource()==plusBtn){
-            broj = Float.parseFloat(display.getText());
-            display.setText("");
-            operacija = 1;
-        }
-        else if(actionEvent.getSource()==minus){
-            broj = Float.parseFloat(display.getText());
-            display.setText("");
-            operacija = 2;
-        }
-
-        else if(actionEvent.getSource()==kroz){
-            broj = Float.parseFloat(display.getText());
-            display.setText("");
-            operacija = 3;
-        }
-
-        else if(actionEvent.getSource()==puta){
-            broj = Float.parseFloat(display.getText());
-            display.setText("");
-            operacija = 4;
-        }
-
-        else if(actionEvent.getSource()==modul){
-            broj = Float.parseFloat(display.getText());
-            display.setText("");
-            operacija = 5;
-        }
-
-        else if(actionEvent.getSource()==equalsBtn){
-            Float drugiBroj = Float.parseFloat(display.getText());
-            display.setText("");
-            switch (operacija){
-                case 1:
-                    display.setText(String.valueOf(broj+drugiBroj));
-                    break;
-                case 2:
-                    display.setText(String.valueOf(broj-drugiBroj));
-                    break;
-                case 3:
-                    display.setText(String.valueOf(broj/drugiBroj));
-                    break;
-                case 4:
-                    display.setText(String.valueOf(broj*drugiBroj));
-                    break;
-                case 5:
-                    display.setText(String.valueOf(broj%drugiBroj));
-                    break;
-            }
-
-        }
+    public void dotBtn(ActionEvent actionEvent) {
+        brojJedan=brojJedan+".";
+        rezultat.set(brojJedan);
     }
+
+    public void plusBtn(ActionEvent actionEvent) {
+        brojDva=getRezultat();
+        brojJedan="";
+        operacija="+";
+    }
+
+    public void minusBtn(ActionEvent actionEvent) {
+        brojDva=getRezultat();
+        brojJedan="";
+        operacija="-";
+    }
+
+    public void multiplyBtn(ActionEvent actionEvent) {
+        brojDva=getRezultat();
+        brojJedan="";
+        operacija="*";
+    }
+
+    public void divideBtn(ActionEvent actionEvent) {
+        brojDva=getRezultat();
+        brojJedan="";
+        operacija="/";
+    }
+
+    public void modulBtn(ActionEvent actionEvent) {
+        brojDva=getRezultat();
+        brojJedan="";
+        operacija="%";
+    }
+
+    public void equals(ActionEvent actionEvent) {
+        if (operacija.equals("+")) {
+            rezultat.set(Double.toString(Double.parseDouble(brojDva) + Double.parseDouble(brojJedan)));
+        }
+        else if (operacija.equals("-")) {
+            rezultat.set(Double.toString(Double.parseDouble(brojDva) - Double.parseDouble(brojJedan)));
+        }
+        else if (operacija.equals("*")) {
+            rezultat.set(Double.toString(Double.parseDouble(brojDva) * Double.parseDouble(brojJedan)));
+        }
+        else if (operacija.equals("/")) {
+            rezultat.set(Double.toString(Double.parseDouble(brojDva) / Double.parseDouble(brojJedan)));
+        }
+        else if (operacija.equals("%")) {
+            rezultat.set(Double.toString(Double.parseDouble(brojDva) % Double.parseDouble(brojJedan)));
+        }
+        operacija="=";
+        brojJedan="";
+        brojDva="";
+    }
+
+
+
 
 }
